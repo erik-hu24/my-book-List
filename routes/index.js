@@ -49,7 +49,7 @@ router.get('/book/:bookID/:bookName', function(req, res, next) {
 });
 
 //-------------------------------------------------------------------------------
-//===============================exercise 3.1====================================
+//===============================Book List code====================================
 // this is the get method for display books.json
 router.get('/booksList', function(req, res, next){
   //console.log("before read");
