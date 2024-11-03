@@ -1,0 +1,44 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.my-h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.thumbnail-img {
+  width: 200px;
+  height: auto;
+}
+
+.main-title{
+  font-size: 40px;
+}
+
+/* Container for the grid layout */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number to change books per row */
+  gap: 20px; /* Space between books */
+  padding: 20px;
+}
+
+/* Individual book card */
+.book-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.book-img {
+  width: 100px;
+  height: auto;
+}

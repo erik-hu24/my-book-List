@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1(class="my-h1") Book List
+    .book-grid
+        each book in booksList
+            .book-card
+                h2= book.title
+                p Authors: #{book.authors ? book.authors.join(', ') : 'N/A'}
+                img(class="book-img" src=book.thumbnailUrl, alt='Book Thumbnail')
+                p Categories: #{book.categories ? book.categories.join(', ') : 'N/A'}
+                p ISBN: #{book.isbn || 'N/A'}
+                p Published Date: #{book.publishedDate && book.publishedDate.$date || 'N/A'}
+                //p Status: #{book.status || 'N/A'}
+                //p Page Count: #{book.pageCount || 'N/A'}
+                //p Short Description: #{book.shortDescription || 'N/A'}
+                //p Long Description: #{book.longDescription || 'N/A'}
+                hr
